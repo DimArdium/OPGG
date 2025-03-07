@@ -1,14 +1,21 @@
 import { test } from "@playwright/test"
 import { MainPage } from "../pages/mainPage"
-import { ChampionPage } from "../pages/championPage";
+import { ChampionsPage } from "../pages/championsPage";
+import { CurrentChampionPage } from "../pages/currentChampionPage";
+ 
 
 test("Вывод контер пиков по выбранному чемпиону", async ({ page }) => {
 
     const mainPage = new MainPage(page);
-    const championPage = new ChampionPage(page);
+    const championPage = new ChampionsPage(page);
+    const currentChampionPage = new CurrentChampionPage(page);
 
     await mainPage.goToMainPage();
     await mainPage.goToChampionsPage();
-    await championPage.goToChampionByName('Ahri');
+    await championPage.goToChampionByName('Syndra');
+    await currentChampionPage.getCounterPick();
+     
+
+
 
 })

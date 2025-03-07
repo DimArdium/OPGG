@@ -1,7 +1,7 @@
 import { Locator, Page } from "playwright-core";
 
 
-export class MainPageLocators {
+export class MainLocators {
 
     readonly mainPage: Locator;
     readonly championPage: Locator;
