@@ -1,1 +1,1 @@
-export type ChampionsName = | 'Ahri' | 'Darius' | 'Jinx';
+export type ChampionsName = | 'Ahri' | 'Darius' | 'Jinx'| 'Syndra';
