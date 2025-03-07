@@ -1,5 +1,5 @@
 import { Page } from "playwright-core";
-import { CurrentChampionLocators } from "../locators/currentChampionPageLocators";
+import { CurrentChampionLocators } from "../Locators/currentChampionPageLocators";
 
 
 export class CurrentChampionPage {
