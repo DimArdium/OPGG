@@ -13,8 +13,9 @@ test("Вывод контер пиков по выбранному чемпио�
     await mainPage.goToMainPage();
     await mainPage.goToChampionsPage();
     await championPage.goToChampionByName('Syndra');
-    await currentChampionPage.getCounterPick();
-     
+    await currentChampionPage.getStrongCounterPick();
+    await currentChampionPage.getWeakCounterPick();
+    
 
 
 
